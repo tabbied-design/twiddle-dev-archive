@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- META
+	__________________________________________________________________________________ -->
+	
+	<meta charset="utf-8" />
+	<title>Tabbied - Generated Art</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+	<!-- CSS
+	__________________________________________________________________________________ -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+	<!-- Custom Link -->
+	<link href="css/linkstyles.css" rel="stylesheet" type="text/css" />
+
+	<!-- Page Transition -->
+	<link href="css/animsition.css" rel="stylesheet" type="text/css" />
+
+	<!-- Color Picker -->
+	<link href="css/pickr.monolith.min.css" rel="stylesheet" type="text/css" /> 
+
+	<!-- Custom Style -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<!-- Favicons
+	__________________________________________________________________________________ -->
+	
+	<link href="img/favicon.ico" rel="shortcut icon" />
+	<link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+	<!-- Doodle plugin -->
+	<script src="https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js"></script> 
+	<style>
+	css-doodle {
+		--color0:#FFFFFF;
+		--color1:#81FFF9;
+		--color2:#00FFF3;
+		--color3:#00A1FF;
+		--color4:#FF8DFF;
+		--color5:#FF007E;
+		
+		--rule: (
+@nth(1,2,3,4,5,6) {
+	width: @calc(70 - @i() * 10)%;
+	height:@calc(23.33 - @i() * 3.33)%;
+	position:absolute;
+	top: @calc(26.66 + @i() * 3.33)%;
+	left:20%;
+    border-top-left-radius: 320px;
+    border-top-right-radius: 320px;
+	background-image: linear-gradient(45deg, var(--color2), var(--color3));
+	overflow:hidden;
+	z-index: @i();	
+	transition: 1s ease;
+}
+@nth(7,8,9,10,11,12) {
+	width: @calc(70 - (@i() - 6) * 10)%;
+	height:@calc(23.33 - (@i() - 6) * 3.33)%;
+	position:absolute;
+	top: 50%;
+	left: @calc(10 + (@i() - 6) * 10)%;
+    border-bottom-left-radius: 320px;
+    border-bottom-right-radius: 320px;
+	background-image: linear-gradient(45deg, var(--color4), var(--color5));
+	overflow:hidden;
+	z-index: @i();
+	transition: 1s ease;
+}
+
+		);
+	}
+	</style>
+<body>
+	
+	<!-- PAGE TRANSITION
+	__________________________________________________________________________________ -->
+		
+	<div class="preloader">
+		<svg width="90" height="120" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ring" style="background: none;"><rect x="20" y="20" width="48" height="72" ng-attr-stroke="{{config.base}}" ng-attr-stroke-width="{{config.width}}" fill="none" stroke="#f4f4f4" stroke-width="2"></rect><rect x="20" y="20" width="48" height="72" ng-attr-stroke="{{config.stroke}}" ng-attr-stroke-width="{{config.innerWidth}}" ng-attr-stroke-lincap="{{config.linecap}}" fill="none" stroke="#111111" stroke-width="2" stroke-lincap="square"><animate attributeName="stroke-dasharray" calcMode="linear" values="24 216;120 120;24 216" keyTimes="0;0.5;1" dur="1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="stroke-dashoffset" calcMode="linear" values="0;-120;-240" keyTimes="0;0.5;1" dur="1" begin="0s" repeatCount="indefinite"></animate></rect></svg>
+	</div>
+	<div class="page-overlay"></div>
+	<div class="animsition-overlay"></div>
+	<div class="animsition-overlay-veil"></div>
+
+	<!-- HEADER
+	__________________________________________________________________________________ -->
+	
+	<div class="header abs">
+		<div class="container-xl">
+			<a id="logo" href="../">Tabbied</a>
+			<div id="menu">
+				<a href="#" class="link link-reveil">Menu</a>
+			</div>
+		</div><!-- // .container-xl -->
+
+		<!-- MENU -->
+		<div class="menu-box">
+			<div class="menu-box-slide"></div>
+			<div class="container-xl">
+				<div class="col-6 col-lg-2 col-sm-hide"></div>
+				<ul class="col-3 col-lg-3 col-sm-2 list menu-list">
+					<li class="active"><a data-letters="Shop" href="../">Shop</a></li>
+					<li><a data-letters="About" href="about.html">About</a></li>
+					<li><a data-letters="Contact" href="contact.html">Contact</a></li>
+				</ul>	
+				<ul class="col-2 col-lg-2 col-sm-1 list menu-list">
+					<li><a data-letters="Facebook" href="https://www.facebook.com/TabbiedWallArt/" class="no-animsition" target="_blank">Facebook</a></li>
+					<li><a data-letters="Instagram" href="https://www.instagram.com/tabbiedart/" class="no-animsition" target="_blank">Instagram</a></li>
+					<li><a data-letters="Pinterest" href="https://www.pinterest.com/tabbiedart/" class="no-animsition" target="_blank">Pinterest</a></li>
+				</ul>
+				<div id="cross">
+					<span></span>
+					<span></span>
+				</div>
+			</div><!-- // .container-xl -->
+		</div><!-- // .menu-box -->
+
+	</div><!-- // .header -->
+
+	<!-- HERO
+	__________________________________________________________________________________ -->
+    <div class="hero-container">
+
+	  	<div class="container-xl">
+	  		<div class="cta">
+	  			<h2 class="min-title faint offset-bot-med">Featured Wall Art</h2>
+	  			<p class="med-headline">Gradient circles representing balance and harmony.</p>
+	  			<p><a href="symmetry.html" class="primary_btn">View Art</a>
+	  			</p>
+	  		</div>
+	  		<div class="demo-container">
+	  			<a href="symmetry.html" title="Symmetry" class="demo-link">Symmetry</a>
+	  			<div class="demo-art">
+					<css-doodle use="var(--rule)">
+					:doodle {
+						@grid: 12x1/ 100%;
+						width:320px;
+						height:480px;
+						position:absolute;
+						background:  radial-gradient(circle, var(--color0), var(--color1));
+						transition: 1s ease;
+					}
+					:container {
+						overflow:hidden;
+						margin-top:-40px;
+						transform: rotate(@p(0deg, -0deg, -45deg, 45deg, 90deg, -90deg, -180deg, 180deg, -270deg, 270deg, -360deg, 360deg));
+						transition: 1s ease;
+					}
+
+					</css-doodle>
+	  			</div>
+      			<p class="product-title-list">
+      				<a href="symmetry.html" class="link link-veil" data-letters="Symmetry">Symmetry <span>$7</span></a>
+      			</p>
+	  		</div>
+	  		
+	  	</div> 		
+     
+
+    </div>
+
+
+	<!-- MAIN
+	__________________________________________________________________________________ -->
+
+	<div class="container-xl">
+		<div class="row offset-top06">	
+			<div class="col-5 col-md-hide"></div>
+			<div class="col-4 col-xl-6 col-md-6 col-sm-4">
+				<h2 class="min-title">Tabbied is a place to create and order customizable, minimally generated wall art.</h2>
+				<p><a href="about.html" class="link link-reveil faint" title="About">Learn More</a></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-1 col-xl-hide"></div>
+			<div class="col-4 col-xl-5 col-sm-4 offset-top04">
+				<a href="super-zario.html" class="product-title-list">Super Zario <span>$7</span></a>
+				<a href="super-zario.html"><img src="img/art_super_zario.jpg" alt="Super Zario" /></a>
+			</div>
+			<div class="col-2 col-xl-2 col-sm-hide"></div>
+			<div class="col-4 col-xl-5 col-sm-4 offset-top04">
+				<a href="horizon.html" class="product-title-list">Horizon <span>$7</span></a>
+				<a href="horizon.html"><img src="img/art_horizon.jpg" alt="Horizon" /></a>
+			</div>
+			<div class="col-1 col-xl-hide"></div>
+		</div>	
+
+		<div class="row">
+			<div class="col-1 col-xl-hide"></div>
+			<div class="col-4 col-xl-5 col-sm-4 offset-top05">
+				<a href="disque.html" class="product-title-list">Disque <span>$5</span></a>
+				<a href="disque.html"><img src="img/art_disque.jpg" alt="Disque" /></a>
+
+			</div>
+			<div class="col-2 col-xl-2 col-sm-hide"></div>
+			<div class="col-4 col-xl-5 col-sm-4 offset-top05">
+				<a href="labyrinth.html" class="product-title-list">Labyrinth <span>$5</span></a>
+				<a href="labyrinth.html"><img src="img/art_labyrinth.jpg" alt="Labyrinth" /></a>
+
+			</div>
+			<div class="col-1 col-xl-hide"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-1 col-xl-hide"></div>
+			<div class="col-4 col-xl-5 col-sm-4 offset-top05">
+				<a href="veil.html" class="product-title-list">Veil <span>$5</span></a>
+				<a href="veil.html"><img src="img/art_veil.jpg" alt="Veil" /></a>
+
+			</div>
+			<div class="col-2 col-xl-2 col-sm-hide"></div>
+			<div class="col-4 col-xl-5 col-sm-4 offset-top05">
+				<a href="ascender.html" class="product-title-list">Ascender <span>$5</span></a>
+				<a href="ascender.html"><img src="img/art_ascender.jpg" alt="Ascender" /></a>
+
+			</div>
+			<div class="col-1 col-xl-hide"></div>
+		</div>
+
+		<div class="row offset-top05">
+			<div class="col-4 col-sm-4"></div>
+			<div class="col-4 col-xl-5 col-sm-4">
+				<a href="the-city.html" class="product-title-list">The City <span>$5</span></a>
+				<a href="the-city.html"><img src="img/art_the_city.jpg" alt="The City" /></a>
+			</div>
+		</div><!-- // .row .offset-top05 -->
+
+		<div class="row offset-top05">
+			<div class="col-4 col-lg-2 col-sm-hide"></div>
+			<div class="col-4 col-xl-5 col-lg-5 col-sm-4">
+				<p class="center">
+					Thanks for browsing! Sign up to our email list to be notified of new artwork from Tabbied. 
+				</p>
+				<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E90561920AB37638DB92F082F211BBB2B09CF866FB0C13F74E8689D516C23793926414AD99E932B21D7FAE250CF2453E5DA179A">	
+					<div class="subscribe">
+					    <input id="fieldEmail" placeholder="Type your email" name="cm-shksj-shksj" type="email" class="def-input js-cm-email-input"
+					    required />
+					    <button id="subscribe-button" class="js-cm-submit-button" type="submit">Subscribe</button>
+					</div>
+				</form>
+				<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+			</div>
+		</div>
+
+	</div><!-- // .container-xl -->
+
+
+	<!-- FOOTER
+	__________________________________________________________________________________ -->	
+
+	<div class="container-xl footer">
+		<div class="col-6">
+			<p>
+				&mdash;<br />
+				<a href="terms-of-use.html">Terms</a> &nbsp; 
+				<a href="privacy.html">Privacy Policy</a>
+			</p>
+		</div>	
+		<div class="col-6">
+			<p class="right">
+				<br /><!-- <a href="#" class="scroll-up">Scroll up</a> -->
+				&copy; 2019 Tabbied
+			</p>
+		</div>
+	</div><!-- // .container-xl .footer -->
+
+	
+	<!-- SCRIPTS
+	__________________________________________________________________________________ -->
+
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/home_demo.js"></script>
+</body>
+</html>

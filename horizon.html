@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- META
+	__________________________________________________________________________________ -->
+	
+	<meta charset="utf-8" />
+	<title>Tabbied "Horizon"</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+	<!-- CSS
+	__________________________________________________________________________________ -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
+	
+	<!-- Custom Link -->
+	<link href="css/linkstyles.css" rel="stylesheet" type="text/css" />
+
+	<!-- Page Transition -->
+	<link href="css/animsition.css" rel="stylesheet" type="text/css" />
+
+	<!-- Color Picker -->
+	<link href="css/pickr.monolith.min.css" rel="stylesheet" type="text/css" /> 
+
+	<!-- Custom Style -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	
+<style>
+css-doodle {
+--color0:#f7f6f6;
+--color1:#f0d6c6;
+--color2:#e4c5ae;
+--color3:#233e3c;
+
+
+--randomColor: @p(var(--color1), var(--color2));
+--rule: (
+
+@nth(15 - n) {
+		background: var(--randomColor);
+		height:@rand(180%,320%);
+		width:100%;
+		-webkit-transition: 1s ease;
+		transition: 1s ease;
+}
+@nth(n + 16) {
+	background: var(--color3);
+	height:@rand(240%,400%);
+	width:100%;
+	opacity:calc(@row() / 26);
+	z-index:2;
+	transition: 1s ease;
+	:before {
+		content: '';
+		background: var(--color0);
+		width:  @rand(20%, 30%);
+		margin-left:  @rand(-2%, 2%);
+		left:35%;
+		opacity:calc(1 / ( @row() - 14));					
+		height:100%;
+		position:absolute;
+		z-index:3;
+		-webkit-transition: 1s ease;
+		transition: 1s ease;
+	}
+}
+@nth(6) {		
+		background-color: var(--color0);
+		width:30%;
+		height:20%;
+		-webkit-box-shadow:0 0 60px var(--color0);
+		box-shadow:0 0 60px var(--color0);
+		left:35%;
+		top: @rand(8%, 50%);
+		border-radius:320px;
+		position:absolute;
+		z-index:1;
+}
+@nth(16) {
+	background: var(--color0);
+	height:40.67%;
+	width:100%;
+	opacity:1;
+	bottom:0;
+	position:absolute;
+	z-index:1;
+}
+@nth(17) {
+	top:90%;
+}
+@nth(26)  {
+	height:400%;
+}
+);
+}
+	</style>
+
+	<!-- Favicons
+	__________________________________________________________________________________ -->
+	
+	<link href="img/favicon.ico" rel="shortcut icon" />
+	<link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+</head>
+<body>
+	<!-- PAGE TRANSITION
+	__________________________________________________________________________________ -->
+		
+	<div class="preloader">
+		<svg width="90" height="120" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ring" style="background: none;"><rect x="20" y="20" width="48" height="72" ng-attr-stroke="{{config.base}}" ng-attr-stroke-width="{{config.width}}" fill="none" stroke="#f4f4f4" stroke-width="2"></rect><rect x="20" y="20" width="48" height="72" ng-attr-stroke="{{config.stroke}}" ng-attr-stroke-width="{{config.innerWidth}}" ng-attr-stroke-lincap="{{config.linecap}}" fill="none" stroke="#111111" stroke-width="2" stroke-lincap="square"><animate attributeName="stroke-dasharray" calcMode="linear" values="24 216;120 120;24 216" keyTimes="0;0.5;1" dur="1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="stroke-dashoffset" calcMode="linear" values="0;-120;-240" keyTimes="0;0.5;1" dur="1" begin="0s" repeatCount="indefinite"></animate></rect></svg>
+	</div>
+	<div class="page-overlay"></div>
+	<div class="animsition-overlay"></div>
+	<div class="animsition-overlay-veil"></div>
+	<div class="left-bg"></div>
+	<div class="curtain"></div>	
+
+	<!-- HEADER
+	__________________________________________________________________________________ -->
+	
+	<div class="header">
+		<div class="container-xl">
+			<a id="logo" href="../">Tabbied</a>
+			<div id="menu">
+				<a href="#" class="link link-reveil" data-letters="Menu">Menu</a>
+			</div>
+		</div><!-- // .container-xl -->
+
+		<!-- MENU -->
+		<div class="menu-box">
+			<div class="menu-box-slide"></div>
+			<div class="container-xl">
+				<div class="col-6 col-lg-2 col-sm-hide"></div>
+				<ul class="col-3 col-lg-3 col-sm-2 list menu-list">
+					<li><a data-letters="Shop" href="../">Shop</a></li>
+					<li><a data-letters="About" href="about.html">About</a></li>
+					<li><a data-letters="Contact" href="contact.html">Contact</a></li>
+				</ul>	
+				<ul class="col-2 col-lg-2 col-sm-1 list menu-list">
+					<li><a data-letters="Facebook" href="https://www.facebook.com/TabbiedWallArt/" class="no-animsition" target="_blank">Facebook</a></li>
+					<li><a data-letters="Instagram" href="https://www.instagram.com/tabbiedart/" class="no-animsition" target="_blank">Instagram</a></li>
+					<li><a data-letters="Pinterest" href="https://www.pinterest.com/tabbiedart/" class="no-animsition" target="_blank">Pinterest</a></li>
+				</ul>
+				<div id="cross">
+					<span></span>
+					<span></span>
+				</div>
+			</div><!-- // .container-xl -->
+		</div><!-- // .menu-box -->
+
+	</div><!-- // .header -->
+
+
+
+
+	<!-- MAIN
+	__________________________________________________________________________________ -->
+
+	<div class="container-xl">
+		<div class="row">	
+			<div class="col-1"></div>
+			<div class="col-6 col-sm-hide"></div>
+			<div class="col-4 col-lg-3 col-sm-4 product-section">
+				<div id="order-summary">
+					<h2 class="product-title" data-name="Horizon" data-price="700">Horizon <span id="final-price">$7</span></h2>
+					<p class="product-desc">Minimal landscape art of a sunset on the horizon.</p>
+				</div>
+
+				<div id="order-art">
+					<css-doodle use="var(--rule)">
+					:doodle {
+						@grid: 26x1/ 100%;
+						width:320px;
+						height:480px;
+						overflow:hidden;
+						border:solid 7px #fff;
+						-webkit-box-shadow:0 0 5px #ddd;
+						box-shadow:0 0 5px #ddd;
+						position:absolute;
+						left:25%;
+						top:0;
+						margin-left:-160px;
+						text-align:center;
+						box-sizing:border-box
+					}
+					:container {
+						background: var(--color0);
+						overflow:hidden;
+					}
+
+					</css-doodle>
+				</div>
+				<div class="free-sample">
+					<a href="img/free_sample_horizon.jpg" download class="no-animsition link link-reveil">&darr; Download free sample</a>
+				</div>
+
+				<div id="order-details">
+					<p class="label">&mdash;<br />Change colors </p>
+					<div class="colors" data-count="4">
+						<div class="color-picker0"></div>
+						<div class="color-picker1"></div>
+						<div class="color-picker2"></div>
+						<div class="color-picker3"></div>
+					</div>
+			
+					<div class="subtle_btn_bg">
+						<a id="redraw" class="link link-reveil" href="#" data-letters="Redraw">Redraw</a>
+					</div>
+					<p class="offset-top02">
+						<span class="bold">Item:</span> Digital download (6 print-ready JPG files)<br />
+					</p>
+					<button id="checkout-button" class="order_btn primary_btn offset-top02" role="link">Order now</button>
+					<p class="mobile-only center offset-top01">
+						<a href="img/free_sample_horizon.jpg" download class="no-animsition link link-reveil">&darr; Download free sample</a>
+					</p>
+					<h3 class="offset-top02">Item details</h3>
+					<p>You'll get 6 high resolution (300 dpi) JPG files of your custom artwork, print-ready for all standard frame sizes.</p>
+					<ol class="more-details numbered-list">
+						<li>2:3 aspect ratio JPG file for print sizes of 2x3, 4x6, 6x9, 8x12, 10x15, 12x18, 14x21, 16x24, 18x27, 20x30, 22x33, 24x36 inches.</li>
+						<li>3:4 aspect ratio JPG file for print sizes of 3x4, 6x8, 9x12, 12x16, 15x20, 18x24, 21x28, 24x32 inches.</li>
+						<li>4:5 aspect ratio JPG file for print sizes of 4x5, 8x10, 12x15, 16x20, 20x25 inches.</li>
+						<li>5:7 aspect ratio JPG file for print sizes of 5x7, 10x14 inches, and also 50x70 cm</li>
+						<li>11:14 aspect ratio JPG file for print sizes of 11x14 inches.</li>
+						<li>An international paper size JPG file for printing A5, A4, A3, A2, A1.</li>
+					</ol>
+					<a href="#" class="expand-collapse link link-reveil"><span>+</span> Show full details</a>
+					
+					<h3 class="offset-top02">Order process time</h3>
+					<p>
+						JPG files for your custom artwork will be sent to your email normally within 24 hours from the time you placed your order. Currently, we need a little time to prepare your artwork because we want to make sure the digital files are formatted to be the best quality.
+					</p>
+				</div>
+			</div>
+		</div><!-- // .row .offset-top04 -->	
+	</div><!-- // .container-xl -->
+
+
+
+	<!-- FOOTER
+	__________________________________________________________________________________ -->	
+
+	<div class="container-xl footer">
+		<div class="col-6">
+			<p>
+				&mdash;<br />
+				<a href="terms-of-use.html">Terms</a> &nbsp; 
+				<a href="privacy.html">Privacy Policy</a>
+			</p>
+		</div>	
+		<div class="col-6">
+			<p class="right">
+				<br /><!-- <a href="#" class="scroll-up">Scroll up</a> -->
+				&copy; 2019 Tabbied
+			</p>
+		</div>
+	</div><!-- // .container-xl .footer -->
+
+	<!-- SCRIPTS
+	__________________________________________________________________________________ -->
+
+	<script type="text/javascript" src="https://checkout.stripe.com/checkout.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/pickr.es5.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/start_art.js"></script>	
+	<script type="text/javascript" src="js/payment.js"></script>
+	
+	<!-- Doodle plugin -->
+	<!--<script src="https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.5.1/css-doodle.min.js"></script>	
+
+</body>
+</html>
